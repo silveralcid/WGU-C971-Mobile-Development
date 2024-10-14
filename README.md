@@ -1,9 +1,9 @@
 <a id="readme-top"></a>
 
-<h3 align="center">Software I - C#</h3>
+<h3 align="center">Mobile Application Development Using C# and .NET MAUI</h3>
 
   <p align="center">
-    Course C968 - Western Governer's University
+    Course C971 - Western Governer's University
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -18,39 +18,47 @@
 ### Built With
 
 * .NET
+* MAUI
+* C#
+* SQLite
 
 
 ## Course Information
 
-Software I - C# builds object-oriented programming expertise and introduces powerful new tools for C# application development. You will learn about and put into action: class design, exception handling, and other object-oriented principles and constructs to develop software that meets business requirements. This course requires foundational knowledge of object-oriented programming.
+Mobile Application Development Using C# introduces students to programming for mobile devices. Building on students’ previous programming knowledge in C#, this course explores a broad range of topics, including mobile user interface design and development; building applications that adapt to different mobile devices and platforms; managing data using a local database; and consuming REST-based web services. In this course, students will focus on developing skills using the latest framework designed to provide a more modern and streamlined development experience. This framework will help students design and code cross-platform applications that work on a range of mobile devices. There are several prerequisites for this course: Software I and II, and UI Design.
 
 ### Competencies
 
-**Classes and Interfaces**
+**Introduction to Mobile Development**
 
-The graduate designs software solutions with appropriate classes, objects, methods, and interfaces to achieve specific goals.
+The graduate develops a simple mobile application using an integrated development environment (IDE).
 
-**Object-Oriented Principles**
+**User Interfaces**
 
-The graduate implements object-oriented design principles (e.g., inheritance, encapsulation, and abstraction) in developing applications for ensuring the application's scalability.
+The graduate develops a user interface for a mobile application.
 
-**Application Development**
+**Managing Data**
 
-The graduate produces applications using high-level programming language constructs to meet business requirements.
+The graduate creates solutions to store, retrieve, and transmit mobile application data.
 
-**Exception Handling**
-The graduate incorporates simple exception handling in application development for improving user experience and application stability.
+**Supporting Devices and Platforms**
 
-**User Interface Development**
-The graduate develops user interfaces to meet project requirements.
+The graduate develops an application that accounts for different platforms and device conditions.
 
 ### Scenario
 
-You are working for a small manufacturing organization that has outgrown its current inventory system. They have been using a spreadsheet program to manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
+For this task, you will develop a multiple-screen mobile application for WGU students to track their academic terms, courses associated with each term, and assessments associated with each course. The application will allow students to enter, edit, and delete term, course, and assessment data. It should provide summary and detailed views of courses for each term, provide notifications for upcoming performance and objective assessments, and notify students of deadlines and tracking milestones even after the application is closed. You will create a wireframe as a visual guide, representing the skeletal framework of the application. Your application will use an SQLite database using the SQLIte ORM located at SQLite-net.
 
-They have provided you with a mock-up of the user interface to use in the design and development of the system (see the attached "GUI Mock-Up") and a class diagram to assist you in your work (see the attached "UML Class Diagram"). The organization also has specific business requirements that must be included as part of the application. A system analyst from your company created the solution statements outlined in the requirements section based on the manufacturing organization's business requirements. You will use these solution statements to develop your application.
+### Requirements
 
-
+* Utilize GitLab for project management
+* Draw a low-fidelity wireframe for your mobile application
+* Create, within the .NET Multi-platform App UI (MAUI) framework, a mobile application aligned to the wireframe
+* Provide an interface for academic terms and courses
+* Provide an interface that allows the user to access all the following features for each academic term
+* Provide an interface that allows the user to access and edit all the following details for each course
+* Create features that allow the user to enter assessments and set due dates
+* Write code to create a set of data for evaluation and testing purposes
 
 <!-- CONTACT -->
 ## Contact
