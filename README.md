@@ -3,7 +3,7 @@
 <h3 align="center">Mobile Application Development Using C# and .NET MAUI</h3>
 
   <p align="center">
-    Course C971 - Western Governer's University
+    Course C971 - Class Planning Mobile App
     <br />
     <br />
     <a href="https://youtu.be/UH3a2VChnv0">View Demo</a>
