@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermsApp.CoursePage"
+             Title="Course">
+    <ScrollView>
+        <VerticalStackLayout Padding="5">
+            <Entry x:Name="courseTitle"
+                   Text="Course Title"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="32"
+                   TextChanged="courseTitle_TextChanged" />
+            <VerticalStackLayout>
+                <HorizontalStackLayout Spacing="15">
+                    <Label Text="Course Start Date:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20" />
+                    <DatePicker x:Name="courseStart"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        DateSelected="courseStart_DateSelected" />
+                </HorizontalStackLayout>
+                <Label
+                    x:Name="startDateError"
+                    Text="Start Date must be before End Date"
+                    HorizontalTextAlignment="Start" 
+                    TextColor="Red"
+                    IsVisible="False"
+                />
+            </VerticalStackLayout>
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Course End Date:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20" />
+                <DatePicker x:Name="courseEnd"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            DateSelected="courseEnd_DateSelected" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Course Status:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20" />
+                <Picker x:Name="courseStatus"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        SelectedIndexChanged="courseStatus_SelectedIndexChanged" />
+            </HorizontalStackLayout>
+            <Border Stroke="ForestGreen"
+                    StrokeThickness="3"
+                    Padding="5">
+                <VerticalStackLayout>
+                    <Label Text="Course Instructor Information:" FontAttributes="Bold" FontSize="Medium" />
+                    <Label Text="Name:" />
+                    <Entry x:Name="instructorName" TextChanged="instructorName_TextChanged" />
+                    <Label Text="Phone:" />
+                    <Entry x:Name="instructorPhone" TextChanged="instructorPhone_TextChanged"/>
+                    <Label Text="Email:" />
+                    <Entry x:Name="instructorEmail" TextChanged="instructorEmail_TextChanged"/>
+                    <Label
+                        x:Name="emailError"
+                        Text="Invalid email address. Please enter a correct email to ensure it is saved."
+                        HorizontalTextAlignment="Start" 
+                        TextColor="Red"
+                        IsVisible="False"
+                    />
+                </VerticalStackLayout>
+            </Border>
+            <Border Stroke="ForestGreen"
+                    StrokeThickness="3"
+                    Padding="5">
+                <VerticalStackLayout>
+                    <Label Text="Notifications" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Notify Days Before Start Date:" FontSize="Small" />
+                    <Picker x:Name="courseStartNotif" SelectedIndexChanged="courseStartNotif_SelectedIndexChanged"></Picker>
+                    <Label Text="Notify Days Before End Date:" FontSize="Small" />
+                    <Picker x:Name="courseEndNotif" SelectedIndexChanged="courseEndNotif_SelectedIndexChanged"></Picker>
+                </VerticalStackLayout>
+            </Border>
+            <Border Stroke="ForestGreen"
+                    StrokeThickness="3"
+                    Padding="5">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Course Details"
+                           FontSize="Medium"
+                           FontAttributes="Bold" />
+                    <Entry x:Name="courseDetails"
+                           TextChanged="courseDetails_TextChanged" />
+                    <!-- Added course details section instead of launching another page -->
+                </VerticalStackLayout>
+            </Border>
+            <Border  Stroke="ForestGreen"
+                StrokeThickness="3"
+                Padding="5">
+                <VerticalStackLayout>
+                    <Label Text="Assessments" FontSize="Medium" FontAttributes="Bold"/>
+                    <Border  Stroke="Gray"
+                        StrokeThickness="3"
+                        Padding="5">
+                        <VerticalStackLayout>
+                            <!-- Added due dates to assessments-->
+                            <Label Text="Performance Assessment" FontSize="Medium"/>
+                            <Entry x:Name="paName" Text="Assessment Name" TextChanged="paName_TextChanged"/>
+                            <Label Text="Due Date"/>
+                            <DatePicker x:Name="paDueDate" DateSelected="paDueDate_DateSelected"></DatePicker>
+                            <Label Text="Start Date"/>
+                            <DatePicker x:Name="paStart" DateSelected="paStart_DateSelected"></DatePicker>
+                            <Label Text="End Date"/>
+                            <DatePicker x:Name="paEnd" DateSelected="paEnd_DateSelected"></DatePicker>
+                            <Label Text="Notify Days Before Start Date:" FontSize="Small" />
+                            <Picker x:Name="paStartNotif" SelectedIndexChanged="paStartNotif_SelectedIndexChanged"></Picker>
+                            <Label Text="Notify Days Before End Date:" FontSize="Small" />
+                            <Picker x:Name="paEndNotif" SelectedIndexChanged="paEndNotif_SelectedIndexChanged"></Picker>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border  Stroke="ForestGreen"
+                    StrokeThickness="3"
+                        Padding="5">
+                        <VerticalStackLayout>
+                            <Label Text="Objective Assessment" FontSize="Medium"/>
+                            <Entry x:Name="oaName" Text="Assessment Name" TextChanged="oaName_TextChanged"/>
+                            <Label Text="Due Date" />
+                            <DatePicker x:Name="oaDueDate" DateSelected="oaDueDate_DateSelected"></DatePicker>
+                            <Label Text="Start Date"/>
+                            <DatePicker x:Name="oaStart" DateSelected="oaStart_DateSelected"></DatePicker>
+                            <Label Text="End Date"/>
+                            <DatePicker x:Name="oaEnd" DateSelected="oaEnd_DateSelected"></DatePicker>
+                            <Label Text="Notify Days Before Start Date:" FontSize="Small" />
+                            <Picker x:Name="oaStartNotif" SelectedIndexChanged="oaStartNotif_SelectedIndexChanged" ></Picker>
+                            <Label Text="Notify Days Before End Date:" FontSize="Small" />
+                            <Picker x:Name="oaEndNotif" SelectedIndexChanged="oaEndNotif_SelectedIndexChanged"></Picker>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+            <Border Stroke="ForestGreen"
+                StrokeThickness="3"
+                Padding="5">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Course Notes" FontSize="Medium" FontAttributes="Bold"/>
+                    <VerticalStackLayout x:Name="noteStack">
+                        <!-- Changed to programatically create notes as created, inital wireframe was prepared to launch another view-->
+                    </VerticalStackLayout>
+                    <Entry Text="New Note" x:Name="noteInput"/>
+                    <Button x:Name="addNote" Text="Add Note" Clicked="addNote_Clicked" Background="#1b7d2d"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

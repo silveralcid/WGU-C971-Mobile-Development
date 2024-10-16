@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermsApp", "TermsApp\TermsApp.csproj", "{7BA8FFE4-A146-472D-8A2A-58EC73E40869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA8FFE4-A146-472D-8A2A-58EC73E40869}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E48EB4D-48C5-40D7-BEDF-BCE2D92BA003}
+	EndGlobalSection
+EndGlobal
