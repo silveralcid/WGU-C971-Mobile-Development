@@ -13,7 +13,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+The project for the course involved developing a mobile application for Western Governors University students to track their academic terms, courses, and assessments. Utilizing the .NET MAUI framework, I created an application that allows users to enter, edit, and delete academic data while providing summary and detailed views of courses. The app includes notification features for upcoming assessments and deadlines, ensuring students stay informed even when the application is closed. As part of the development process, I also drew low-fidelity wireframes to serve as a visual guide for the application's design. The course introduced me to mobile programming concepts, covering user interface design, data management with SQLite, and the integration of REST-based web services. Through this project, I enhanced my skills in mobile app development and gained practical experience in managing academic information using modern programming tools.
 
 ### Built With
 
